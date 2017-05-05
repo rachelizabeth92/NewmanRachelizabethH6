@@ -6,7 +6,7 @@ public class BST
   {
     root = null;
   }
-  //check if empty
+  
   public boolean isEmpty()
   {
     if(root == null)
@@ -18,12 +18,12 @@ public class BST
       return false;
     }
   }
-  //check if full
+  
   public boolean isFull()
   {
     return false;
   }
-  //add to tree
+  
   public String insert(String element)
   {
     Node node = new Node(element);
@@ -83,37 +83,10 @@ public class BST
     }
     return; 
   }
-  //get the root/return to root
+  
   public Node getRoot()
   {
     return root;
-  }
-  //find node
-  public String searchTree(String element)
-  {
-    Node node;
-    
-    if(node.getElem == element)
-    {
-      return node;
-    }
-    else if(element < node.getElem() && node.getLeft())
-    {
-      return node.getLeft(searchTree(element));
-    }
-    else if(element > node.getElem() && node.getRight())
-    {
-      return node.getRight(searchTree(element));
-    }
-    else
-    {
-      return null;
-    }
-  }
-  //delete from tree
-  public String delete(String element)
-  {
-    
   }
 }
         
