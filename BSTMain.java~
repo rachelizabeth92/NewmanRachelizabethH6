@@ -11,13 +11,6 @@ public class BSTMain
     tree.insert("Bob");
     
     tree.inorderTraversal(tree.getRoot());
-    
-    System.out.printf("Search %d\n", tree.searchTree("Rachel"));
-    
-    
-    System.out.printf("Delete %d\n", tree.deleteNode("Rachel"));
-    
-    tree.inorderTraversal(tree.getRoot());
  }
 }
     

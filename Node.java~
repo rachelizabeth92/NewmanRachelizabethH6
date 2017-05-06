@@ -30,19 +30,9 @@ class Node
               return this.left;
             }
             
-            public void setElem(String element)
-            {
-              this.element = element;
-            }
-            
             public String getElem()
             {
               return this.element;
-            }
-            
-            public void setCount(int count)
-            {
-              this.count = count;
             }
             
             public int getCount()
@@ -59,6 +49,5 @@ class Node
             {
               return --count;
             }
-            
             
 }
