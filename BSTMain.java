@@ -1,23 +1,27 @@
+import java.util.*;
+import java.io.*;
+
 public class BSTMain
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws FileNotFoundException
   {
     BST tree = new BST();
+    File file = new File("file.txt");
+    Scanner myScan = new Scanner(file);
+    String word;
     
-    tree.insert("Rachel");
-    tree.insert("Bob");
-    tree.insert("Heidi");
-    tree.insert("Roger");
-    tree.insert("Bob");
-    
-    tree.inorderTraversal(tree.getRoot());
-    
-    System.out.printf("Search %d\n", tree.searchTree("Rachel"));
-    
-    
-    System.out.printf("Delete %d\n", tree.deleteNode("Rachel"));
+   while(myScan.hasNext())
+    {
+     word = myScan.next().toLowerCase();
+     tree.insert(word);
+    }
+    myScan.close();
     
     tree.inorderTraversal(tree.getRoot());
+    
+    System.out.printf("Search %d\n", tree.searchTree("good"));
+    
+    
  }
 }
     
