@@ -17,11 +17,9 @@ public class BSTMain
     }
     myScan.close();
     
-    tree.inorderTraversal(tree.getRoot());
+    tree.postorderTraversal();
     
-    System.out.printf("Search %d\n", tree.searchTree("good"));
-    
-    
+    System.out.printf("Search %d\n", tree.search("good"));
  }
 }
     
