@@ -68,20 +68,7 @@ public class BST
 
     public int search ( String element )
     {
-/*
- *       if(curr.getRight() == null)
- *       {
- *         curr = null;
- *       }
- *       else
- *       {
- *         curr = curr.getRight();
- *       }
- *
- * IS EQUIVALENT TO SIMPLY
- * 
- *       curr = curr.getRight();
- */
+
         Node    curr = null;
         int     count = -1;
 

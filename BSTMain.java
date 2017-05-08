@@ -17,9 +17,12 @@ public class BSTMain
     }
     myScan.close();
     
-    tree.postorderTraversal();
+    tree.inorderTraversal(tree.getRoot(),1);
     
     System.out.printf("Search %d\n", tree.search("good"));
+    System.out.printf("Delete %d\n", tree.delete("example"));
+    
+    tree.inorderTraversal(tree.getRoot(),1);
  }
 }
     
